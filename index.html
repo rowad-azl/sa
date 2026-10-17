@@ -27,7 +27,18 @@
 @media(max-width:355px){.hero-info h1{font-size:30px}.actions{grid-template-columns:1fr}.hero-float{font-size:9px}.brand-lines small{font-size:9px}.banner-actions{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
-<!-- TikTok Pixel for ROWAD AL AZL: not configured. Install ONLY this advertiser's own Pixel after obtaining its ID. -->
+<!-- TikTok Pixel Code Start | ROWAD AZL only -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+  ttq.load('DB9S1DBC77UAEK31BC3G');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
 </head>
 <body>
 <!-- No other advertisers' analytics identifiers or events are included. WhatsApp clicks are NOT verified message conversions. -->
@@ -92,7 +103,7 @@
 (function(){
   'use strict';
   // The landing page does not report conversion events or count clicks as messages.
-  // Only this brand's verified server-side workflow may send real WhatsApp message / answered-call conversions. Page has no tracking pixel yet.
+  // Only this brand's verified server-side workflow may send real WhatsApp message / answered-call conversions. PageView is tracked by this brand’s own Pixel in the head, while real Contact is server-side only.
   var form=document.getElementById('quote-form');
   if(!form)return;
   form.addEventListener('submit',function(e){
